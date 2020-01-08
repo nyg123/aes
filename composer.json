@@ -1,0 +1,17 @@
+{
+    "name": "nyg/aes",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "牛永光",
+            "email": "nyg1991@aliyun.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Nyg\\": "src/"
+        }
+    }
+}
