@@ -15,7 +15,7 @@ class Aes
     static public function sign_encrypt($data, $key)
     {
         unset($data['sign']);
-        $data = array_filter($data);
+        $data = array_filter($data, 'strlen');
         ksort($data);
         $secret = urldecode(http_build_query($data, '', '&'));
         $secret .= "&key={$key}";
